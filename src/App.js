@@ -6,6 +6,12 @@ import Clock from './components/Clock';
 import Counter from './components/Counter';
 import ButtonTest from './components/ButtonTest';
 import LoggingButton from './components/LoggingButton';
+import LoginControl from './components/LoginControl';
+import NumberList from './components/NumberList';
+import NameForm from './components/NameForm';
+import Calculator from './components/Calculator';
+
+const numbers = [1, 2, 3, 4, 5];
 function App() {
   return (
     <div className="App">
@@ -15,6 +21,10 @@ function App() {
       <Counter/>
       <ButtonTest/>
       <LoggingButton/>
+      <LoginControl/>
+      <NumberList numbers={numbers}/>
+      <NameForm/>
+      <Calculator/>
     </div>
     
   );
