@@ -10,6 +10,7 @@ import LoginControl from './components/LoginControl';
 import NumberList from './components/NumberList';
 import NameForm from './components/NameForm';
 import Calculator from './components/Calculator';
+import SignUpDialog from './components/SignUpDialog';
 
 const numbers = [1, 2, 3, 4, 5];
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <NumberList numbers={numbers}/>
       <NameForm/>
       <Calculator/>
+      <SignUpDialog/>
     </div>
     
   );
