@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Clock from './components/Clock';
 import Counter from './components/Counter';
@@ -9,11 +8,14 @@ import NumberList from './components/NumberList';
 import NameForm from './components/NameForm';
 import Calculator from './components/Calculator';
 import SignUpDialog from './components/SignUpDialog';
-
+import ContextTest from './components/ContextTest';
 const numbers = [1, 2, 3, 4, 5];
+
+
 function App() {
   return (
     <div className="App">
+      <ContextTest/>
       <Clock/>
       <Counter/>
       <ButtonTest/>

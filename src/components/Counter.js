@@ -4,7 +4,7 @@ const Counter = () => {
     let [count, setCount] = useState(0);
     useEffect(() => {
         console.log("aboba");
-      });
+    });
 
     function increment() {
         setCount(count + 1);
