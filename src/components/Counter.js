@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const Counter = () => {
-    let [count, setCount] = useState(0);
-    useEffect(() => {
-        console.log("aboba");
-    });
-
-    function increment() {
-        setCount(count + 1);
+class Counter extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { counter: 0 };
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    function decrement() {
-        setCount(count - 1);
+    handleClick() {
+        this.setState(({ counter }) => ({
+            counter: counter + 1,
+        }));
     }
-    return (
-        <div>
-            <h1>{count}</h1>
-            <button onClick={increment}>Increment</button>
-            <button onClick={decrement}>Decrement</button>
-        </div>
-    );
-};
+
+    render() {
+        if (this.state.counter === 5) {
+            throw new Error("Ой всё!!!!");
+        }
+        return <h1 onClick={this.handleClick}>{this.state.counter}</h1>;
+    }
+}
 
 export default Counter;
