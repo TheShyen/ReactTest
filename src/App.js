@@ -11,12 +11,13 @@ import SignUpDialog from "./components/SignUpDialog";
 import ContextTest from "./components/ContextTest";
 import ErrorBoundary from "./components/ErrorBoundary";
 import RefBtn from "./components/RefBtn";
+import HOC from "./components/HOC";
 const numbers = [1, 2, 3, 4, 5];
 
 function App() {
     return (
         <div className="App">
-            <ContextTest />
+            {/* <ContextTest />
             <p>Жми на счетчик 5 раз</p>
             <p>Если в следующих двух хоть в одном ошибка то error boundary заменит их обоих</p>
             <ErrorBoundary>
@@ -30,7 +31,8 @@ function App() {
             <ErrorBoundary>
                 <Counter />
             </ErrorBoundary>
-            <RefBtn />
+            <RefBtn /> */}
+            <HOC/>
             {/* <Clock/>
       <Counter/>
       <ButtonTest/>
