@@ -5,43 +5,25 @@ import ButtonTest from "./components/ButtonTest";
 import LoggingButton from "./components/LoggingButton";
 import LoginControl from "./components/LoginControl";
 import NumberList from "./components/NumberList";
-import NameForm from "./components/NameForm";
 import Calculator from "./components/Calculator";
 import SignUpDialog from "./components/SignUpDialog";
 import ContextTest from "./components/ContextTest";
 import ErrorBoundary from "./components/ErrorBoundary";
 import RefBtn from "./components/RefBtn";
 import HOC from "./components/HOC";
+import Portal from "./components/Portal";
+import RenderPropsTest from "./components/RenderPropsTest";
+import NameForm from "./components/NameForm";
+import CompTest from "./components/CompTest";
 const numbers = [1, 2, 3, 4, 5];
 
 function App() {
     return (
         <div className="App">
-            {/* <ContextTest />
-            <p>Жми на счетчик 5 раз</p>
-            <p>Если в следующих двух хоть в одном ошибка то error boundary заменит их обоих</p>
-            <ErrorBoundary>
-                <Counter />
-                <Counter />
-            </ErrorBoundary>
-
-            <ErrorBoundary>
-                <Counter />
-            </ErrorBoundary>
-            <ErrorBoundary>
-                <Counter />
-            </ErrorBoundary>
-            <RefBtn /> */}
-            <HOC/>
-            {/* <Clock/>
-      <Counter/>
-      <ButtonTest/>
-      <LoggingButton/>
-      <LoginControl/>
-      <NumberList numbers={numbers}/>
-      <NameForm/>
-      <Calculator/>
-      <SignUpDialog/> */}
+            <Portal />
+            <RenderPropsTest />
+            <NameForm />
+            <CompTest />
         </div>
     );
 }
