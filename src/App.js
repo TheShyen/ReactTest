@@ -15,15 +15,21 @@ import Portal from "./components/Portal";
 import RenderPropsTest from "./components/RenderPropsTest";
 import NameForm from "./components/NameForm";
 import CompTest from "./components/CompTest";
+import ReactMemo from "./components/reactApi/ReactMemo";
+import IsValidElement from "./components/reactApi/IsValidElement";
+import ChildrenMap from "./components/reactApi/ChildrenMap";
+import Children from "./components/reactApi/Children";
+import ReactLazy from "./components/reactApi/ReactLazy";
 const numbers = [1, 2, 3, 4, 5];
 
 function App() {
     return (
         <div className="App">
-            <Portal />
-            <RenderPropsTest />
-            <NameForm />
-            <CompTest />
+            <ReactMemo />
+            <IsValidElement />
+            <Children />
+            <ChildrenMap />
+            <ReactLazy />
         </div>
     );
 }
