@@ -20,16 +20,17 @@ import IsValidElement from "./components/reactApi/IsValidElement";
 import ChildrenMap from "./components/reactApi/ChildrenMap";
 import Children from "./components/reactApi/Children";
 import ReactLazy from "./components/reactApi/ReactLazy";
+import DefaultProps from "./components/reactApi/DefaultProps";
+import FlushSync from "./components/reactApi/FlushSync";
+import Events from "./components/reactApi/Events";
 const numbers = [1, 2, 3, 4, 5];
 
 function App() {
     return (
         <div className="App">
-            <ReactMemo />
-            <IsValidElement />
-            <Children />
-            <ChildrenMap />
-            <ReactLazy />
+            <DefaultProps />
+            <FlushSync />
+            <Events />
         </div>
     );
 }
